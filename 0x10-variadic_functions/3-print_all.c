@@ -1,4 +1,4 @@
-#include "variadic_functions."
+#include "variadic_functions.h"
 
 /**
  * print_all - Prints all of the arguments when specified
@@ -25,21 +25,18 @@ void print_all(const char * const format, ...)
 				break;
 			case 'i':
 				printf("%i", va_arg(a_list, int));
-				flag = 0;
-				break;
-			case 'f':
-				printf("%f", va_arg(a_list, double));
-				flag = 0;
-				break;
+		flag = 0;
+break;
 			case 's':
-				str = va_arg(a_list, char*);
-				if (str == NULL)
-					str = "(nil)";
-				printf("%s", str);
-				flag = 0;
-				break;
+str = va_arg(a_list, char*);
+if (str == NULL)
+	str = "(nil)";
+printf("%s", str);
+flag = 0;
+break;
 			default:
-				break;
+flag = 1;
+break;
 		}
 		if (format[i + 1] != '\0' && flag == 0)
 			printf(", ");
