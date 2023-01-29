@@ -1,0 +1,1 @@
+A singly linked list is a unidirectional linked list; i.e., you can only traverse it from head node to tail node. Here are some quick facts about linked lists. It is used to do a slideshow or some basic operations on a notepad like undo and redo.
