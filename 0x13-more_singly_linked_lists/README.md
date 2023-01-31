@@ -1,0 +1,1 @@
+Singly linked lists are a type of a linked list where each node points to the next node in the sequence. It does not have any pointer that points to the previous node. That means we can traverse the list only in forward direction. Figure 1 shows an example of a singly linked list with 4 nodes.
